@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg" translatesAutoresizingMaskIntoConstraints="NO" id="qp8-6x-Kgl">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IG7-n7-l04" customClass="GestureView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qp8-6x-Kgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jb0-zu-Ynl"/>
+                            <constraint firstItem="qp8-6x-Kgl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Vcp-cT-Jl2"/>
+                            <constraint firstAttribute="trailing" secondItem="qp8-6x-Kgl" secondAttribute="trailing" id="ZVj-W2-AcN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qp8-6x-Kgl" secondAttribute="bottom" id="e3K-Dp-2HS"/>
+                            <constraint firstItem="IG7-n7-l04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kKh-bR-kWa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IG7-n7-l04" secondAttribute="bottom" id="mXQ-OM-N3L"/>
+                            <constraint firstItem="IG7-n7-l04" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uek-Ae-Yar"/>
+                            <constraint firstAttribute="trailing" secondItem="IG7-n7-l04" secondAttribute="trailing" id="vMe-TX-A5M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="409"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg" width="640" height="1008"/>
+    </resources>
+</document>
